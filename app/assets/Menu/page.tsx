@@ -13,9 +13,9 @@ export default function Menu() {
 
     <div className='relative flex h-20 justify-end items-center z-20'>
      <div className='flex text-slate-500 gap-10 invisible sm:visible mr-10'>
-      <p className='text-xl hover:underline hover:text-blue-500 transition-all duration-500 ease-in-out '><a href="#">Home</a></p>
-      <p className='text-xl hover:underline hover:text-blue-500 transition-all duration-500 ease-in-out '><a href="#">Projetos</a></p>
       <p className='text-xl hover:underline hover:text-blue-500 transition-all duration-500 ease-in-out '><a href="#">Sobre</a></p>
+      <p className='text-xl hover:underline hover:text-blue-500 transition-all duration-500 ease-in-out '><a href="#">Experiências</a></p>
+      <p className='text-xl hover:underline hover:text-blue-500 transition-all duration-500 ease-in-out '><a href="#">Projetos</a></p>
       <p className='text-xl hover:underline hover:text-blue-500 transition-all duration-500 ease-in-out '><a href="#">Contato</a></p>
      </div>
     </div>
