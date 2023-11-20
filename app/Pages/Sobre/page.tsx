@@ -1,9 +1,9 @@
-import Image from 'next/image'
-
+import Image from 'next/image';
+import { RxGithubLogo, RxLinkedinLogo } from "react-icons/rx";
 export default function Home() {
  return (
   <div className="relative h-full justify-center items-center gap-10 m-10 mt-18">
-   <Image className='flex rounded-full items-center'
+   <Image className='rounded-full items-center'
     src='/perfil.jpeg'
     alt='Foto de perfil de Ródiney Wanderson, criador do site'
     width={200}
@@ -22,14 +22,17 @@ export default function Home() {
     <button className='text-base text-slate-400 border border-slate-400 px-4 py-2 rounded-full hover:bg-slate-800 hover:text-slate-200 hover:border-none transition-colors duration-500'>Contato</button>
    </div>
 
-   <div>
-    <Image
-     src='/linkedin.png'
-     alt='Logo do Linkedin'
-     width={50}
-     height={50}
-    />
-    <p>LinkedIn</p>
+   <div className='flex w-full justify-center mt-8'>
+
+    <div className='flex gap-4 items-center'>
+     <RxLinkedinLogo className="text-slate-500 text-4xl" />
+     <p className='text-slate-500'></p>
+    </div>
+    <div className='flex gap-4 items-center'>
+     <RxGithubLogo className="text-slate-500 text-4xl" />
+     <p className='text-slate-500'></p>
+    </div>
+
    </div>
   </div>
  )
