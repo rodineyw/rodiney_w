@@ -2,17 +2,20 @@ import Image from 'next/image';
 import { RxGithubLogo, RxLinkedinLogo } from "react-icons/rx";
 export default function Home() {
  return (
-  <div className="relative h-full justify-center items-center gap-10 m-10 my-18">
-   <Image className='flex w-full rounded-full items-center'
-    src='/perfil.jpeg'
-    alt='Foto de perfil de Ródiney Wanderson, criador do site'
-    width={200}
-    height={200}
-   />
+  <div className="relative h-screen justify-center items-center m-10 py-10">
+
+   <div className='flex w-full rounded-full justify-center items-center '>
+    <Image className='rounded-full w-48'
+     src='/perfil.jpeg'
+     alt='Foto de perfil de Ródiney Wanderson, criador do site'
+     width={100}
+     height={100}
+    /></div>
+
    <div className='flex flex-col gap-2 mt-8 items-center w-full'>
-    <h1 className="text-xl font-light text-slate-500">Oi, eu sou</h1>
-    <h1 className="text-3xl font-extrabold bg-gradient-to-r from-yellow-500 via-red-500 to-pink-500 text-transparent bg-clip-text">Ródiney Wanderson. </h1>
-    <h1 className="text-xl font-light text-slate-500">
+    <h1 className="text-2xl font-light text-slate-500">Oi, eu sou</h1>
+    <h1 className="text-4xl font-extrabold bg-gradient-to-r from-yellow-500 via-red-500 to-pink-500 text-transparent bg-clip-text">Ródiney Wanderson. </h1>
+    <h1 className="text-2xl font-light text-slate-500">
      Front-End Developer
     </h1>
    </div>
@@ -28,7 +31,11 @@ export default function Home() {
      <RxGithubLogo className="text-slate-500 text-4xl" />
      <p className='text-slate-500'></p>
     </div>
+   </div>
 
+   <div className='flex justify-center items-center py-10'>
+    <button className='text-xl text-slate-900 hover:text-slate-200 hover:underline bg-slate-500 hover:bg-blue-600 p-4 rounded-full font-bold'>
+     <a href="#contato">Informações de Contato</a></button>
    </div>
   </div>
  )
