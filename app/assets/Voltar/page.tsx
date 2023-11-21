@@ -24,7 +24,7 @@ export default function Voltar() {
   return (
     <div className={`relative ${isVisible ? "visible" : "invisible"
       }`}>
-      <button className="fixed bottom-10 right-10 z-10" onClick={scrollTop}>
+      <button className="fixed bottom-16 right-10 z-10" onClick={scrollTop}>
         <a href='#home'>
           <RxTriangleUp className="text-slate-800 bg-slate-500 rounded-full w-10 h-10" />
         </a></button>

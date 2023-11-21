@@ -1,39 +1,13 @@
-'use client'
 import Image from 'next/image';
-import { MouseEvent, useEffect, useRef, useState } from 'react';
+import { useState } from 'react';
 import { RiMenuFill } from "react-icons/ri";
 
 export default function Menu() {
  const [isOpenMenu, setIsOpenMenu] = useState(false);
- const menuLinksEl = useRef<HTMLDivElement>(null);
 
- const handleToggleMenu = (event: MouseEvent) => {
-  event.preventDefault();
+ const handleToggleMenu = () => {
   setIsOpenMenu(!isOpenMenu);
  };
-
- useEffect(() => {
-  function handleClickOutside(event: MouseEvent) {
-   const target = event.target as Node;
-   if (
-    menuLinksEl.current &&
-    target instanceof Node &&
-    !menuLinksEl.current.contains(target)
-   ) {
-    inactivateMenu();
-   }
-  }
-
-  document.addEventListener('click', handleClickOutside as unknown as EventListener);
-
-  return () => {
-   document.removeEventListener('click', handleClickOutside as unknown as EventListener);
-  };
- }, []);
-
- function inactivateMenu() {
-  setIsOpenMenu(false);
- }
 
  return (
   <div id='home' className='relative'>
@@ -45,23 +19,24 @@ export default function Menu() {
     </div>
 
     <div className='relative flex h-20 justify-end items-center z-20'>
-     <div className='flex text-slate-500 gap-10 invisible sm:visible mr-10' ref={menuLinksEl}>
-      <p className='text-xl hover:underline hover:text-blue-500 transition-all duration-500 ease-in-out '><a href="#sobre">Sobre</a></p>
-      <p className='text-xl hover:underline hover:text-blue-500 transition-all duration-500 ease-in-out '><a href="#experiencias">Experiências</a></p>
-      <p className='text-xl hover:underline hover:text-blue-500 transition-all duration-500 ease-in-out '><a href="#projetos">Projetos</a></p>
-      <p className='text-xl hover:underline hover:text-blue-500 transition-all duration-500 ease-in-out '><a href="#contato">Contato</a></p>
+     <div className='flex text-slate-500 gap-10 invisible sm:visible mr-10'>
+      <span className='text-xl hover:underline hover:text-blue-500 transition-all duration-500 ease-out '><a href="#sobre">Sobre</a></span>
+      <span className='text-xl hover:underline hover:text-blue-500 transition-all duration-500 ease-out '><a href="#experiencias">Experiências</a></span>
+      <span className='text-xl hover:underline hover:text-blue-500 transition-all duration-500 ease-out '><a href="#projetos">Projetos</a></span>
+      <span className='text-xl hover:underline hover:text-blue-500 transition-all duration-500 ease-out '><a href="#contato">Contato</a></span>
      </div>
      <div className='sm:hidden text-slate-500 text-3xl mx-4'>
       <button onClick={handleToggleMenu}><RiMenuFill /></button>
      </div>
     </div>
 
+
     {isOpenMenu && (
-     <div className='absolute top-20 right-0 border-zinc-700 bg-zinc-800 rounded-bl-xl bg-opacity-90 p-4' ref={menuLinksEl}>
-      <p className='text-3xl text-slate-400 hover:text-blue-500 transition-all duration-500 ease-in-out '><a href="#sobre">Sobre</a></p>
-      <p className='text-3xl text-slate-400 hover:text-blue-500 transition-all duration-500 ease-in-out '><a href="#experiencias">Experiências</a></p>
-      <p className='text-3xl text-slate-400 hover:text-blue-500 transition-all duration-500 ease-in-out '><a href="#projetos">Projetos</a></p>
-      <p className='text-3xl text-slate-400 hover:text-blue-500 transition-all duration-500 ease-in-out '><a href="#contatos">Contato</a></p>
+     <div className='absolute flex flex-col top-20 right-0 border-zinc-700 bg-purple-950 rounded-bl-xl bg-opacity-90 p-4'>
+      <span className='text-3xl text-slate-400 hover:text-blue-500 transition-all duration-500 ease-out '><a href="#sobre">Sobre</a></span>
+      <span className='text-3xl text-slate-400 hover:text-blue-500 transition-all duration-500 ease-out '><a href="#experiencias">Experiências</a></span>
+      <span className='text-3xl text-slate-400 hover:text-blue-500 transition-all duration-500 ease-out '><a href="#projetos">Projetos</a></span>
+      <span className='text-3xl text-slate-400 hover:text-blue-500 transition-all duration-500 ease-out '><a href="#contato">Contato</a></span>
      </div>
     )}
    </div>
