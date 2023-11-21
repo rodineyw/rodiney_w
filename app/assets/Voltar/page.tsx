@@ -1,4 +1,5 @@
 'use client'
+
 import { useEffect, useState } from "react";
 import { RxTriangleUp } from "react-icons/rx";
 
