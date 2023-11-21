@@ -7,7 +7,7 @@ export default function Projetos() {
     <p className="text-3xl text-slate-400 font-bold">Projetos</p>
    </div>
 
-   <div className="flex flex-col w-full mt-8 text-slate-400 justify-center items-center gap-4 bg-black border border-slate-600 bg-opacity-75 rounded-3xl p-4">
+   <div className="flex flex-col w-full mt-8 text-slate-400 justify-center items-center gap-4 bg-black border border-slate-700 bg-opacity-75 rounded-3xl p-4">
     <div className='relative hover:scale-125 transition-all duration-500 ease-out'>
      <Image src="/filmes.png" alt="Tela inicial do site de filmes" width={200} height={100} className='rounded-2xl' />
     </div>
@@ -22,7 +22,7 @@ export default function Projetos() {
     </div>
    </div>
 
-   <div className="flex flex-col w-full mt-8 text-slate-400 justify-center items-center gap-4 bg-black border border-slate-600 bg-opacity-75 rounded-3xl p-4">
+   <div className="flex flex-col w-full mt-8 text-slate-400 justify-center items-center gap-4 bg-black border border-slate-700 bg-opacity-75 rounded-3xl p-4">
     <div className='relative hover:scale-125 transition-all duration-500 ease-out'>
      <Image src="/blog.png" alt="Tela inicial do blog" width={200} height={100} className='rounded-2xl' />
     </div>
@@ -37,7 +37,7 @@ export default function Projetos() {
     </div>
    </div>
 
-   <div className="flex flex-col w-full mt-8 text-slate-400 justify-center items-center gap-4 bg-black border border-slate-600 bg-opacity-75 rounded-3xl p-4">
+   <div className="flex flex-col w-full mt-8 text-slate-400 justify-center items-center gap-4 bg-black border border-slate-700 bg-opacity-75 rounded-3xl p-4">
     <div className='relative hover:scale-125 transition-all duration-500 ease-out'>
      <Image src="/page.png" alt="Tela inicial da Portfolio antigo" width={200} height={100} className='rounded-2xl' />
     </div>

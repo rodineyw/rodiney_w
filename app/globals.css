@@ -1,12 +1,26 @@
 @tailwind base;
-@tailwind components;
-@tailwind utilities;
 
-html {
-  background-image: url('/bg.png');
-  background-repeat: no-repeat;
+/* Base (light mode) styles */
+ body {
+  background-image: url('/bg-light.png');
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   background-attachment: fixed;
+  background-color: #121212;
+}
+
+@media (prefers-color-scheme: dark) {
+ 
+  /* Dark mode styles */
+  body {
+    background-image: url('/bg-dark.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: #121212;
+  }
 }
 
 ::-webkit-scrollbar {
@@ -32,3 +46,6 @@ html {
 ::-webkit-scrollbar-thumb:active {
   background-color: #222222;
 }
+
+@tailwind components;
+@tailwind utilities;
