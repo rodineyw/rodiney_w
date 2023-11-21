@@ -2,6 +2,7 @@
 import { RevealWrapper } from 'next-reveal'
 import Experiencias from './Pages/Experiencias/page'
 import Home from './Pages/Home/page'
+import Projetos from './Pages/Projetos/page'
 import Sobre from './Pages/Sobre/page'
 import Menu from './assets/Menu/page'
 import Voltar from './assets/Voltar/page'
@@ -13,6 +14,7 @@ export default function App() {
       <Home />
       <Sobre />
       <Experiencias />
+      <Projetos />
       <Voltar />
     </RevealWrapper>
   )
