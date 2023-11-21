@@ -1,3 +1,4 @@
+'use client'
 import Image from 'next/image';
 import { MouseEvent, useEffect, useRef, useState } from 'react';
 import { RiMenuFill } from "react-icons/ri";
