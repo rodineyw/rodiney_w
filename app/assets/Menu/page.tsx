@@ -32,7 +32,7 @@ export default function Menu() {
  }, []);
 
  function inactivateMenu() {
-  setIsOpenMenu(true);
+  setIsOpenMenu(false);
  }
 
  return (
