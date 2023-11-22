@@ -1,3 +1,4 @@
+'use client'
 import { RevealWrapper } from 'next-reveal'
 import Contato from './Pages/Contato/page'
 import Experiencias from './Pages/Experiencias/page'
