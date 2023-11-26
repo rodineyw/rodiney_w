@@ -2,7 +2,7 @@ import { RxCode } from "react-icons/rx";
 
 export default function Experiencias() {
  return (
-  <div id="experiencias" className="flex flex-col h-screen items-center m-4 mt-8 sm:mx-20">
+  <div id="experiencias" className="flex flex-col h-full items-center m-4 mt-8 sm:mx-20">
    <div className="relative gap-4 justify-center items-center">
     <p className="flex text-xl text-slate-800 dark:text-slate-400">Explore minhas</p>
     <p className="flex text-3xl text-slate-800 dark:text-slate-400 font-bold">Experiências</p>
