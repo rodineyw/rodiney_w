@@ -1,4 +1,6 @@
 @tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 /* Base (light mode) styles */
  body {
@@ -46,6 +48,3 @@
 ::-webkit-scrollbar-thumb:active {
   background-color: #222222;
 }
-
-@tailwind components;
-@tailwind utilities;

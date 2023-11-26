@@ -2,7 +2,7 @@ import { RxEnvelopeClosed, RxLinkedinLogo } from "react-icons/rx";
 
 export default function Contato() {
  return (
-  <div id="contato" className="flex flex-col h-screen items-center justify-center">
+  <div id="contato" className="flex flex-col py -8 h-screen items-center justify-center">
    <div className="flex flex-col gap-4 justify-center items-center">
     <p className="text-xl text-slate-800 dark:text-slate-400">Entre em</p>
     <h1 className="text-3xl text-slate-800 dark:text-slate-400 font-bold">Contato</h1>

@@ -3,7 +3,7 @@ import { RxGithubLogo, RxLinkedinLogo } from "react-icons/rx";
 
 export default function Home() {
   return (
-    <div className="relative h-screen justify-center items-center m-4 p-4">
+    <div className="relative h-screen justify-center items-center m-4 py-4">
 
       <div className='flex w-full rounded-full justify-center items-center '>
         <Image className='rounded-full w-48 sm:w-64'

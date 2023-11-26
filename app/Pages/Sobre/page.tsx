@@ -3,7 +3,7 @@ import { RxArchive, RxBackpack } from "react-icons/rx";
 
 export default function Sobre() {
   return (
-    <div id='sobre' className="relative sm:w-auto h-screen justify-center items-center my-8 mx-4 sm:mx-20 md:mx-56 text-slate-800 dark:text-slate-400">
+    <div id='sobre' className="relative sm:w-auto h-screen justify-center items-center my-8 mx-4 py-4 sm:mx-20 md:mx-56 text-slate-800 dark:text-slate-400">
       <div className='flex items-center gap-4'>
         <Image className=' w-36 mt-4 rounded-2xl justify-center'
           src='/perfil.jpeg'
