@@ -34,6 +34,10 @@ export default function Experiencias() {
       <p className="text-xl text-slate-500">Intermediário</p>
       <h1 className="flex text-2xl font-bold justify-start items-center gap-2"><RxCode /> Git</h1>
       <p className="text-xl text-slate-500">Intermediário</p>
+      <h1 className="flex text-2xl font-bold justify-start items-center gap-2"><RxCode /> NextJs</h1>
+      <p className="text-xl text-slate-500">Intermediário</p>
+      <h1 className="flex text-2xl font-bold justify-start items-center gap-2"><RxCode /> ReactJs</h1>
+      <p className="text-xl text-slate-500">Intermediário</p>
      </div>
     </div>
    </div>
