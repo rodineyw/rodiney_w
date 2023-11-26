@@ -8,7 +8,7 @@ export default function Experiencias() {
     <p className="flex text-3xl text-slate-800 dark:text-slate-400 font-bold">Experiências</p>
    </div>
 
-   <div className="grid grid-cols-2 gap-4">
+   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
     <div className="relative w-full mt-8 text-slate-800 dark:text-slate-400 justify-center items-center gap-4 bg-purple-200 dark:bg-slate-800 border border-slate-400 dark:border-slate-600 bg-opacity-75 rounded-2xl p-4">
 
      <div className="grid grid-cols-2 gap-4 items-center justify-center">

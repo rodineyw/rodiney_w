@@ -1,13 +1,14 @@
 import Image from 'next/image'
 export default function Projetos() {
  return (
-  <div id="projetos" className="flex flex-col h-full items-center m-4 mx-10 mt-8 sm:mx-20">
+  <div id="projetos" className="grid grid-cols-1 h-full items-center m-4 mx-10 mt-8 sm:mx-20">
+
    <div className="flex flex-col gap-4 justify-center items-center">
     <p className="text-xl sm:text-3xl text-slate-800 dark:text-slate-400">Alguns dos meus</p>
     <p className="text-3xl sm:text-5xl md:text-6xl text-slate-800 dark:text-slate-400 font-bold">Projetos</p>
    </div>
 
-   <div className='grid grid-cols-2 md:grid-cols-3 md:w-full gap-4'>
+   <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 md:w-full gap-4'>
 
     <div className="flex flex-col w-full mt-8 text-slate-800 dark:text-slate-400 justify-center items-center gap-4 bg-purple-200 dark:bg-black border border-slate-400 dark:border-slate-700 bg-opacity-75 rounded-3xl p-4">
      <div className='relative hover:scale-125 transition-all duration-500 ease-out'>
@@ -39,7 +40,7 @@ export default function Projetos() {
      </div>
     </div>
 
-    <div className="flex flex-col sm:col-span-2 md:col-span-1 w-full mt-8 text-slate-800 dark:text-slate-400 justify-center items-center gap-4 bg-purple-200 dark:bg-black border border-slate-400 dark:border-slate-700 bg-opacity-75 rounded-3xl p-4">
+    <div className="flex flex-col sm:col-span-2 lg:col-span-1 w-full mt-8 text-slate-800 dark:text-slate-400 justify-center items-center gap-4 bg-purple-200 dark:bg-black border border-slate-400 dark:border-slate-700 bg-opacity-75 rounded-3xl p-4">
      <div className='relative hover:scale-125 transition-all duration-500 ease-out'>
       <Image src="/page.png" alt="Tela inicial da Portfolio antigo" width={200} height={100} className='rounded-2xl sm:w-auto' />
      </div>
