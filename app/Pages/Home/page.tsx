@@ -11,6 +11,7 @@ export default function Home() {
           alt='Foto de perfil de Ródiney Wanderson, criador do site'
           width={100}
           height={100}
+          quality={100}
         /></div>
 
       <div className='flex flex-col gap-2 mt-8 items-center w-full'>

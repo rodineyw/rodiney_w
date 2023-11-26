@@ -10,6 +10,7 @@ export default function Sobre() {
           alt='Foto de perfil de Ródiney Wanderson, criador do site'
           width={200}
           height={200}
+          quality={100}
         />
         <div>
           <p className=" text-xl font-light">Conheça mais</p>
