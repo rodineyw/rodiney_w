@@ -12,14 +12,12 @@ import Voltar from './assets/Voltar/page'
 export default function App() {
   return (
     <RevealWrapper>
-      <div className='grid  grid-cols-1 gap-4'>
-        <Menu />
-        <Home />
-        <Sobre />
-        <Experiencias />
-        <Projetos />
-        <Contato />
-      </div>
+      <Menu />
+      <Home />
+      <Sobre />
+      <Experiencias />
+      <Projetos />
+      <Contato />
       <Rodape />
       <Voltar />
     </RevealWrapper>
